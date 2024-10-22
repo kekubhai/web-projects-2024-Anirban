@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Scavenger Hunt</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <header>
+            <h1>Virtual Scavenger Hunt</h1>
+            <div id="scoreboard">
+                <p>Score: <span id="score">0</span></p>
+                <p>Time Left: <span id="timer">300</span> seconds</p>
+            </div>
+        </header>
+
+        <section id="game-area">
+            <div id="clue-area">
+                <p id="current-clue">Click the start button to begin!</p>
+            </div>
+
+            <div id="challenge-area">
+                <p id="challenge-text"></p>
+                <input type="text" id="user-answer" placeholder="Enter your answer">
+                <button id="submit-answer">Submit</button>
+            </div>
+
+            <div id="puzzle-area">
+                <!-- Puzzles will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <footer>
+            <button id="start-button">Start Game</button>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
